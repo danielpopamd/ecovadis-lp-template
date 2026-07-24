@@ -51,12 +51,6 @@ body.mobile-view .sheet{width:393px;margin:24px auto 60px;border-radius:36px;bor
 .anno .d{font-size:12px;color:#6B5A93;font-weight:400}
 .anno .var{font-size:10px;font-weight:800;letter-spacing:.08em;color:#B4530A;background:#FDEBD7;padding:3px 8px;border-radius:4px;white-space:nowrap}
 body.hide-anno .anno{display:none}
-mark.swap{background:#FFF3C4;color:inherit;border-radius:3px;padding:0 4px;box-shadow:inset 0 -2px 0 #F0C419}
-body.hide-anno mark.swap{background:transparent;box-shadow:none;padding:0}
-.edit{outline:none}
-body:not(.hide-anno) .edit{position:relative;outline:1.5px dashed #E4B90F;outline-offset:7px;border-radius:3px}
-body:not(.hide-anno) .edit::after{content:"EDITABLE · CLICK TO TYPE";position:absolute;top:-24px;right:-4px;font-size:7.5px;font-weight:800;letter-spacing:.08em;background:#F0C419;color:#4A3A00;padding:2.5px 7px;border-radius:4px;white-space:nowrap}
-span.edit{display:inline-block}
 
 /* ===== LP shared ===== */
 .wrap{max-width:1120px;margin:0 auto;padding:0 32px}
@@ -318,16 +312,16 @@ h2.sec{font-size:clamp(24px,3.2vw,34px);font-weight:800;line-height:1.2;letter-s
   </header>
 
   <!-- 02 HERO + FORM -->
-  <div class="anno"><span class="n">02 · HERO + FORM</span><span class="d">The first screen repeats what the ad promised. The blocks tagged EDITABLE (small line, headline, description) get fresh copy for every campaign, and you can click into them right here and type to try wording. Bullets and everything else stay the same on every page. Form sits in view without scrolling, same fields as the live EcoVadis form. The faces on the button become real team photos. Later we should test a shorter form for paid traffic.</span><span class="var">SWAPS PER CAMPAIGN</span></div>
+  <div class="anno"><span class="n">02 · HERO + FORM</span><span class="d">The whole hero copy gets personalized per campaign and ad group: the small line above, the headline and the description are rewritten to match the theme (ratings, carbon, risk, compliance) so ad and page say the same thing. Bullet points can stay but keep them agnostic so they fit any theme. Badges stay the same everywhere. Form sits in view without scrolling, same fields as the live EcoVadis form. The faces on the button become real team photos. Later we should test a shorter form for paid traffic.</span><span class="var">SWAPS PER CAMPAIGN</span></div>
   <section class="hero">
     <div class="wrap">
       <div>
-        <span class="eyebrow edit" contenteditable="true" spellcheck="false">For procurement, sustainability and compliance leaders</span>
-        <h1 class="edit" contenteditable="true" spellcheck="false">Sustainability ratings your buyers, auditors and regulators already trust</h1>
-        <p class="lede edit" contenteditable="true" spellcheck="false">See the verified ESG performance of every supplier in your chain, benchmarked against 150,000+ rated companies, so you can prove compliance and cut risk without chasing spreadsheets.</p>
+        <span class="eyebrow">For procurement, sustainability and compliance leaders</span>
+        <h1>Sustainability ratings your buyers, auditors and regulators already trust</h1>
+        <p class="lede">See the verified ESG performance of every supplier in your chain, benchmarked against 150,000+ rated companies, so you can prove compliance and cut risk without chasing spreadsheets.</p>
         <ul class="ticks">
           <li>Analyst-validated scorecards, not self-assessments</li>
-          <li><mark class="swap">CSRD, CS3D, LkSG and Modern Slavery</mark> evidence in one place</li>
+          <li>CSRD, CS3D, LkSG and Modern Slavery evidence in one place</li>
           <li>Live in weeks, suppliers onboarded for you</li>
         </ul>
         <div class="awards">
