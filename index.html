@@ -278,8 +278,8 @@ h2.sec{font-size:clamp(24px,3.2vw,34px);font-weight:800;line-height:1.2;letter-s
     <div class="sub">Purple chips = build notes, not part of the page. Yellow highlights = copy that swaps per campaign theme and market. Prepared by Daniel Popa · danielpopa.me</div>
   </div>
   <div style="display:flex;gap:10px;flex-wrap:wrap">
-    <button class="toggle" onclick="document.body.classList.toggle('mobile-view');this.textContent=document.body.classList.contains('mobile-view')?'Desktop preview':'Mobile preview'">Mobile preview</button>
-    <button class="toggle" onclick="document.body.classList.toggle('hide-anno');this.textContent=document.body.classList.contains('hide-anno')?'Show build notes':'Hide build notes'">Hide build notes</button>
+    <button class="toggle" onclick="var b=document.body,on=b.classList.toggle('mobile-view');this.textContent=on?'Desktop preview':'Mobile preview';b.classList.toggle('hide-anno',on);document.getElementById('ntoggle').textContent=on?'Show build notes':'Hide build notes'">Mobile preview</button>
+    <button class="toggle" id="ntoggle" onclick="var on=document.body.classList.toggle('hide-anno');this.textContent=on?'Show build notes':'Hide build notes'">Hide build notes</button>
   </div>
 </div>
 
